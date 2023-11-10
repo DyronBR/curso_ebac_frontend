@@ -3,9 +3,9 @@ $(document).ready(function() {
         event.preventDefault();
 
         const NomeTarefa = $('#nome-tarefa').val();
-        const listaItem = $('<li></li>').text(NomeTarefa);
+        const listaItem = $('<li></li>').html(NomeTarefa);
 
-        $('#lista-tarefas').append(listaItem);
+        listaItem.appendTo('#lista-tarefas');
 
         $('#nome-tarefa').val('');
     });
