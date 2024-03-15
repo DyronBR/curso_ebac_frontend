@@ -1,7 +1,7 @@
 @use 'config/reset';
 @use 'config/variaveis';
 
-@mixin elementoButton($margin: 16px) {
+@mixin elementoButton() {
     text-align: center;
     padding: 8px 0;
     border-radius: 8px;
